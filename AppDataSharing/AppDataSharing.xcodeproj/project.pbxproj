@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B135706616C450E8007B7D24 /* ENHAppDataSharingController.m in Sources */ = {isa = PBXBuildFile; fileRef = B135706516C450E8007B7D24 /* ENHAppDataSharingController.m */; };
-		B135706716C450E8007B7D24 /* ENHAppDataSharingController.m in Sources */ = {isa = PBXBuildFile; fileRef = B135706516C450E8007B7D24 /* ENHAppDataSharingController.m */; };
+		B135706616C450E8007B7D24 /* ENHPasteboardAppDataSharingController.m in Sources */ = {isa = PBXBuildFile; fileRef = B135706516C450E8007B7D24 /* ENHPasteboardAppDataSharingController.m */; };
+		B135706716C450E8007B7D24 /* ENHPasteboardAppDataSharingController.m in Sources */ = {isa = PBXBuildFile; fileRef = B135706516C450E8007B7D24 /* ENHPasteboardAppDataSharingController.m */; };
 		B136071916C189E200C68D21 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B136071816C189E200C68D21 /* UIKit.framework */; };
 		B136071B16C189E200C68D21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B136071A16C189E200C68D21 /* Foundation.framework */; };
 		B136071D16C189E200C68D21 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B136071C16C189E200C68D21 /* CoreGraphics.framework */; };
@@ -42,8 +42,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B135706416C450E8007B7D24 /* ENHAppDataSharingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENHAppDataSharingController.h; sourceTree = "<group>"; };
-		B135706516C450E8007B7D24 /* ENHAppDataSharingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENHAppDataSharingController.m; sourceTree = "<group>"; };
+		B135706416C450E8007B7D24 /* ENHPasteboardAppDataSharingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENHPasteboardAppDataSharingController.h; sourceTree = "<group>"; };
+		B135706516C450E8007B7D24 /* ENHPasteboardAppDataSharingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENHPasteboardAppDataSharingController.m; sourceTree = "<group>"; };
 		B136071416C189E200C68D21 /* Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Editor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B136071816C189E200C68D21 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B136071A16C189E200C68D21 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -134,8 +134,8 @@
 				B140483E16C29D2300543D8D /* Data Model */,
 				B14CC4F516C1D01F009EF78C /* Categories */,
 				B136071F16C189E200C68D21 /* Supporting Files */,
-				B135706416C450E8007B7D24 /* ENHAppDataSharingController.h */,
-				B135706516C450E8007B7D24 /* ENHAppDataSharingController.m */,
+				B135706416C450E8007B7D24 /* ENHPasteboardAppDataSharingController.h */,
+				B135706516C450E8007B7D24 /* ENHPasteboardAppDataSharingController.m */,
 			);
 			path = AppDataSharing;
 			sourceTree = "<group>";
@@ -292,7 +292,7 @@
 				B136073D16C1905500C68D21 /* ENHPerson.m in Sources */,
 				B14CC4F316C1CEB7009EF78C /* NSDateFormatter+SimpleFormatter.m in Sources */,
 				B1B0DD7716C31DA8008BF859 /* ENHAppDataPackage.m in Sources */,
-				B135706616C450E8007B7D24 /* ENHAppDataSharingController.m in Sources */,
+				B135706616C450E8007B7D24 /* ENHPasteboardAppDataSharingController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +307,7 @@
 				B14CC4EC16C1CB81009EF78C /* ENHPersonDetailViewController.m in Sources */,
 				B14CC4F416C1CEB7009EF78C /* NSDateFormatter+SimpleFormatter.m in Sources */,
 				B1B0DD7816C31DA8008BF859 /* ENHAppDataPackage.m in Sources */,
-				B135706716C450E8007B7D24 /* ENHAppDataSharingController.m in Sources */,
+				B135706716C450E8007B7D24 /* ENHPasteboardAppDataSharingController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

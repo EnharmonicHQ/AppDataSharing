@@ -10,7 +10,7 @@
 #import "ENHPerson.h"
 #import "NSDateFormatter+SimpleFormatter.h"
 
-#import "ENHAppDataSharingController.h"
+#import "ENHPasteboardAppDataSharingController.h"
 #import "ENHAppDataPackage.h"
 
 @interface ENHPersonDetailViewController ()
@@ -43,7 +43,7 @@
     NSURL *url = [notification object];
     if ([[url query] isEqualToString:kReadPasteboardDataQuery])
     {
-        [ENHAppDataSharingController handleSendPasteboardDataURL:url
+        [ENHPasteboardAppDataSharingController handleSendPasteboardDataURL:url
                                                completionHandler:^(ENHAppDataPackage *retrievedPackage, NSError *error) {
             if (retrievedPackage)
             {

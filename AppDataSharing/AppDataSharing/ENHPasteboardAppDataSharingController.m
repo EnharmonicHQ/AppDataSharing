@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Enharmonic. All rights reserved.
 //
 
-#import "ENHAppDataSharingController.h"
+#import "ENHPasteboardAppDataSharingController.h"
 #import "ENHAppDataPackage.h"
 
 NSString *kReadPasteboardDataQuery = @"ReadPasteboardData";
 NSString *const AppDataSharingErrorDomain = @"AppDataSharingErrorDomain";
 
-@implementation ENHAppDataSharingController
+@implementation ENHPasteboardAppDataSharingController
 
 +(void)sendDataToApplicationWithScheme:(NSString *)scheme
                            dataPackage:(ENHAppDataPackage *)dataPackage

@@ -11,7 +11,7 @@
 
 // Data Sharing
 #import "ENHAppDataPackage.h"
-#import "ENHAppDataSharingController.h"
+#import "ENHPasteboardAppDataSharingController.h"
 
 static NSString *kViewerURLScheme = @"com.EnharmonicHQ.Viewer";
 
@@ -101,7 +101,7 @@ static NSString *kViewerURLScheme = @"com.EnharmonicHQ.Viewer";
 {
     NSData *personData = [self.person dataRepresentation];
     ENHAppDataPackage *package = [ENHAppDataPackage dataPackageForCurrentApplicationWithPayload:personData];
-    [ENHAppDataSharingController sendDataToApplicationWithScheme:kViewerURLScheme
+    [ENHPasteboardAppDataSharingController sendDataToApplicationWithScheme:kViewerURLScheme
                                                      dataPackage:package
                                                completionHandler:^(BOOL *sent, NSError *error) {
         if (sent)

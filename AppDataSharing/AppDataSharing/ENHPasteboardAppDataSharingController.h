@@ -22,7 +22,7 @@ typedef NS_ENUM(NSInteger, ENHAppDataSharingErrorType)
     ENHAppDataSharingErrorTypeNoDataFound = 300,
 };
 
-@interface ENHAppDataSharingController : NSObject
+@interface ENHPasteboardAppDataSharingController : NSObject
 
 +(void)sendDataToApplicationWithScheme:(NSString *)scheme
                            dataPackage:(ENHAppDataPackage *)dataPackage
