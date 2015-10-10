@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="DtL-1X-DVa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B30a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DtL-1X-DVa">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -10,80 +11,81 @@
                 <navigationController definesPresentationContext="YES" id="DtL-1X-DVa" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lxs-PT-P5E">
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <connections>
-                        <segue destination="ZRN-Zo-OsW" kind="relationship" relationship="rootViewController" id="cc4-tn-rmx"/>
+                        <segue destination="TkF-sd-36e" kind="relationship" relationship="rootViewController" id="eeg-Bs-au2"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aTI-Ia-ePI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-132" y="-79"/>
+            <point key="canvasLocation" x="-247.5" y="-83.450704225352112"/>
         </scene>
         <!--Person Detail View Controller-->
-        <scene sceneID="IAK-eT-9ct">
+        <scene sceneID="71y-tw-BQD">
             <objects>
-                <viewController id="ZRN-Zo-OsW" customClass="ENHPersonDetailViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JfR-CP-IcK">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <viewController id="TkF-sd-36e" customClass="ENHPersonDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l0m-GL-1ah"/>
+                        <viewControllerLayoutGuide type="bottom" id="49j-sV-KgL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oa7-kd-Kb8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="First Name Last Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eq-wL-yLw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRJ-LB-MPs">
+                                <rect key="frame" x="76" y="72" width="48" height="21"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Date Of Birth:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUc-4v-UFI">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="135" id="VJv-Ox-0pO"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cF9-yl-WMc">
+                                <rect key="frame" x="20" y="101" width="104" height="21"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Plf-Wi-y1Q">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGs-LN-hkW">
+                                <rect key="frame" x="132" y="72" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibd-5A-sBv">
+                                <rect key="frame" x="132" y="101" width="42" height="21"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XUc-4v-UFI" firstAttribute="top" secondItem="2eq-wL-yLw" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="82F-C2-YPu"/>
-                            <constraint firstItem="Plf-Wi-y1Q" firstAttribute="leading" secondItem="XUc-4v-UFI" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="9Vw-xS-bPI"/>
-                            <constraint firstAttribute="trailing" secondItem="Plf-Wi-y1Q" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="BIy-2U-HTi"/>
-                            <constraint firstItem="2eq-wL-yLw" firstAttribute="leading" secondItem="JfR-CP-IcK" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="PKT-sl-g4v"/>
-                            <constraint firstItem="2eq-wL-yLw" firstAttribute="top" secondItem="JfR-CP-IcK" secondAttribute="top" constant="20" symbolic="YES" type="default" id="XCW-T6-sF2"/>
-                            <constraint firstItem="Plf-Wi-y1Q" firstAttribute="baseline" secondItem="XUc-4v-UFI" secondAttribute="baseline" type="default" id="aTj-A4-B3L"/>
-                            <constraint firstItem="XUc-4v-UFI" firstAttribute="leading" secondItem="JfR-CP-IcK" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="do2-oZ-r7Z"/>
-                            <constraint firstAttribute="trailing" secondItem="2eq-wL-yLw" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="qR5-1S-aDe"/>
+                            <constraint firstItem="YGs-LN-hkW" firstAttribute="leading" secondItem="dRJ-LB-MPs" secondAttribute="trailing" constant="8" id="7YP-sa-X37"/>
+                            <constraint firstItem="cF9-yl-WMc" firstAttribute="leading" secondItem="oa7-kd-Kb8" secondAttribute="leading" constant="20" id="Erp-g0-NFa"/>
+                            <constraint firstItem="cF9-yl-WMc" firstAttribute="top" secondItem="dRJ-LB-MPs" secondAttribute="bottom" constant="8" id="LyM-X7-Bfz"/>
+                            <constraint firstItem="dRJ-LB-MPs" firstAttribute="trailing" secondItem="cF9-yl-WMc" secondAttribute="trailing" id="YKS-iU-Igk"/>
+                            <constraint firstItem="Ibd-5A-sBv" firstAttribute="leading" secondItem="cF9-yl-WMc" secondAttribute="trailing" constant="8" id="fk3-bm-sWw"/>
+                            <constraint firstItem="dRJ-LB-MPs" firstAttribute="top" secondItem="l0m-GL-1ah" secondAttribute="bottom" constant="8" id="jop-gF-MeK"/>
+                            <constraint firstItem="Ibd-5A-sBv" firstAttribute="baseline" secondItem="cF9-yl-WMc" secondAttribute="baseline" id="kJd-sl-tRB"/>
+                            <constraint firstItem="YGs-LN-hkW" firstAttribute="baseline" secondItem="dRJ-LB-MPs" secondAttribute="baseline" id="uLp-MT-zSB"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YGs-LN-hkW" secondAttribute="trailing" constant="20" id="uQ0-DC-NTP"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ibd-5A-sBv" secondAttribute="trailing" constant="20" id="wCd-YR-dUq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Kqa-L0-GXa"/>
+                    <navigationItem key="navigationItem" id="8OI-Rk-WXb"/>
                     <connections>
-                        <outlet property="dateOfBirthLabel" destination="Plf-Wi-y1Q" id="h45-lb-Myi"/>
-                        <outlet property="nameLabel" destination="2eq-wL-yLw" id="P51-4W-DbL"/>
+                        <outlet property="dateOfBirthLabel" destination="Ibd-5A-sBv" id="Pbm-Uu-6my"/>
+                        <outlet property="nameLabel" destination="YGs-LN-hkW" id="RJ4-Fe-f2Y"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g1y-n4-5c4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7dw-UQ-in8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="395" y="-81"/>
+            <point key="canvasLocation" x="497" y="-82"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="ENHPersonDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ENHPersonDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="dateOfBirthLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

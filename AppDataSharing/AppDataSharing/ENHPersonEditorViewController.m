@@ -17,6 +17,7 @@ static NSString *kViewerURLScheme = @"com.EnharmonicHQ.Viewer";
 
 @interface ENHPersonEditorViewController () <UITextFieldDelegate>
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *actionButton;
 @property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameTextField;
 @property (weak, nonatomic) IBOutlet UIDatePicker *birthDatePicker;
@@ -35,10 +36,8 @@ static NSString *kViewerURLScheme = @"com.EnharmonicHQ.Viewer";
     [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textDidChange:) name:UITextFieldTextDidChangeNotification object:nil];
-    UIBarButtonItem *saveButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveButtonTapped:)];
-    [self.navigationItem setLeftBarButtonItem:saveButton];
     
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard:)];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleBackgroundTapGestureRecognizer:)];
     [self.view addGestureRecognizer:tap];
     
     NSData *personData = [NSData dataWithContentsOfURL:[[self class] personDataURL]];
@@ -58,13 +57,9 @@ static NSString *kViewerURLScheme = @"com.EnharmonicHQ.Viewer";
 {
     [super viewWillAppear:animated];
     
-    UIBarButtonItem *actionButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
-                                                                                      target:self
-                                                                                      action:@selector(actionButtonItemTapped:)];
     NSString *urlString = [NSString stringWithFormat:@"%@://", kViewerURLScheme];
     NSURL *url = [NSURL URLWithString:urlString];
-    [actionButtonItem setEnabled:[[UIApplication sharedApplication] canOpenURL:url]];
-    [self.navigationItem setRightBarButtonItem:actionButtonItem];
+    [self.actionButton setEnabled:[[UIApplication sharedApplication] canOpenURL:url]];
 }
 
 -(void)viewWillDisappear:(BOOL)animated
@@ -89,7 +84,12 @@ static NSString *kViewerURLScheme = @"com.EnharmonicHQ.Viewer";
     [personData writeToURL:[[self class] personDataURL] atomically:YES];
 }
 
--(void)dismissKeyboard:(UIGestureRecognizer *)recognizer
+-(void)handleBackgroundTapGestureRecognizer:(UIGestureRecognizer *)recognizer
+{
+    [self dismissKeyboard];
+}
+
+-(void)dismissKeyboard
 {
     [self.firstNameTextField resignFirstResponder];
     [self.lastNameTextField resignFirstResponder];
@@ -122,13 +122,14 @@ static NSString *kViewerURLScheme = @"com.EnharmonicHQ.Viewer";
 
 -(IBAction)datePickerValueChanged:(id)sender
 {
+    [self dismissKeyboard];
     NSDate *date = [self.birthDatePicker date];
     [self.person setDateOfBirth:date];
 }
 
 #pragma mark - UITextFieldDelegate
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     if (textField == [self firstNameTextField])
     {
@@ -150,7 +151,6 @@ static NSString *kViewerURLScheme = @"com.EnharmonicHQ.Viewer";
 
 #pragma mark - Accessors
 
-@synthesize person = _person;
 -(void)setPerson:(ENHPerson *)person
 {
     if (_person != person)

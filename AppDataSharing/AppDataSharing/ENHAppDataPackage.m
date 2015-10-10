@@ -115,12 +115,4 @@ static NSString *kENHPayloadKey = @"kENHPayloadKey";
     return package;
 }
 
-#pragma mark - Accessors
-
-@synthesize sourceApplicationName = _sourceApplicationName;
-@synthesize sourceApplicationIdentifier = _sourceApplicationIdentifier;
-@synthesize sourceApplicationVersion = _sourceApplicationVersion;
-@synthesize sourceApplicationBuild = _sourceApplicationBuild;
-@synthesize payload = _payload;
-
 @end

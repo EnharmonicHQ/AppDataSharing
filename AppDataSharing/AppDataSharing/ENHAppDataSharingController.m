@@ -39,7 +39,7 @@ NSString *const AppDataSharingErrorDomain = @"AppDataSharingErrorDomain";
     }
     else
     {
-        [pasteboard setData:nil forPasteboardType:pasteboardType];
+        [pasteboard setItems:@[]];
         [pasteboard setPersistent:NO];
         
         NSDictionary *errorInfoDictionary = @{NSLocalizedDescriptionKey: [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"No application was found to handle the url:", nil), sendingURL]};
@@ -77,7 +77,7 @@ NSString *const AppDataSharingErrorDomain = @"AppDataSharingErrorDomain";
                                         code:ENHAppDataSharingErrorTypeNoDataFound
                                     userInfo:errorInfoDictionary];
         }
-        [pasteboard setData:nil forPasteboardType:pasteboardType];
+        [pasteboard setItems:@[]];
     }
     else
     {

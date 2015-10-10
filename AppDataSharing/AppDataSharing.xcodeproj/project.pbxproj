@@ -18,9 +18,9 @@
 		B136072B16C189E200C68D21 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B136072A16C189E200C68D21 /* Default.png */; };
 		B136072D16C189E200C68D21 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B136072C16C189E200C68D21 /* Default@2x.png */; };
 		B136072F16C189E200C68D21 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B136072E16C189E200C68D21 /* Default-568h@2x.png */; };
-		B136073216C189E200C68D21 /* EditorStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B136073016C189E200C68D21 /* EditorStoryboard.storyboard */; };
 		B136073516C189E200C68D21 /* ENHPersonEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B136073416C189E200C68D21 /* ENHPersonEditorViewController.m */; };
 		B136073D16C1905500C68D21 /* ENHPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = B136073C16C1905500C68D21 /* ENHPerson.m */; };
+		B144D2101BC9598D008849E5 /* EditorStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B144D20F1BC9598D008849E5 /* EditorStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
 		B14CC4EC16C1CB81009EF78C /* ENHPersonDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B14CC4EB16C1CB81009EF78C /* ENHPersonDetailViewController.m */; };
 		B14CC4F316C1CEB7009EF78C /* NSDateFormatter+SimpleFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B14CC4F216C1CEB7009EF78C /* NSDateFormatter+SimpleFormatter.m */; };
 		B14CC4F416C1CEB7009EF78C /* NSDateFormatter+SimpleFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B14CC4F216C1CEB7009EF78C /* NSDateFormatter+SimpleFormatter.m */; };
@@ -38,7 +38,6 @@
 		B1C6612016C1C501002872B6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B136072A16C189E200C68D21 /* Default.png */; };
 		B1C6612116C1C501002872B6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B136072C16C189E200C68D21 /* Default@2x.png */; };
 		B1C6612216C1C501002872B6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B136072E16C189E200C68D21 /* Default-568h@2x.png */; };
-		B1C6612316C1C501002872B6 /* EditorStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B136073016C189E200C68D21 /* EditorStoryboard.storyboard */; };
 		B1C6612416C1C501002872B6 /* ViewerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C6611116C1C4E1002872B6 /* ViewerStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -58,11 +57,11 @@
 		B136072A16C189E200C68D21 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B136072C16C189E200C68D21 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B136072E16C189E200C68D21 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		B136073116C189E200C68D21 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/EditorStoryboard.storyboard; sourceTree = "<group>"; };
 		B136073316C189E200C68D21 /* ENHPersonEditorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ENHPersonEditorViewController.h; sourceTree = "<group>"; };
 		B136073416C189E200C68D21 /* ENHPersonEditorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ENHPersonEditorViewController.m; sourceTree = "<group>"; };
 		B136073B16C1905500C68D21 /* ENHPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENHPerson.h; sourceTree = "<group>"; };
 		B136073C16C1905500C68D21 /* ENHPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENHPerson.m; sourceTree = "<group>"; };
+		B144D20F1BC9598D008849E5 /* EditorStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditorStoryboard.storyboard; sourceTree = "<group>"; };
 		B14CC4EA16C1CB81009EF78C /* ENHPersonDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENHPersonDetailViewController.h; sourceTree = "<group>"; };
 		B14CC4EB16C1CB81009EF78C /* ENHPersonDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENHPersonDetailViewController.m; sourceTree = "<group>"; };
 		B14CC4F116C1CEB6009EF78C /* NSDateFormatter+SimpleFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+SimpleFormatter.h"; sourceTree = "<group>"; };
@@ -170,8 +169,8 @@
 		B140484016C29D3C00543D8D /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				B136073016C189E200C68D21 /* EditorStoryboard.storyboard */,
 				B1C6611116C1C4E1002872B6 /* ViewerStoryboard.storyboard */,
+				B144D20F1BC9598D008849E5 /* EditorStoryboard.storyboard */,
 				B14CC4EA16C1CB81009EF78C /* ENHPersonDetailViewController.h */,
 				B14CC4EB16C1CB81009EF78C /* ENHPersonDetailViewController.m */,
 				B136073316C189E200C68D21 /* ENHPersonEditorViewController.h */,
@@ -233,7 +232,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = ENH;
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Enharmonic;
 			};
 			buildConfigurationList = B136070E16C189E200C68D21 /* Build configuration list for PBXProject "AppDataSharing" */;
@@ -259,11 +258,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B144D2101BC9598D008849E5 /* EditorStoryboard.storyboard in Resources */,
 				B136072316C189E200C68D21 /* InfoPlist.strings in Resources */,
 				B136072B16C189E200C68D21 /* Default.png in Resources */,
 				B136072D16C189E200C68D21 /* Default@2x.png in Resources */,
 				B136072F16C189E200C68D21 /* Default-568h@2x.png in Resources */,
-				B136073216C189E200C68D21 /* EditorStoryboard.storyboard in Resources */,
 				B1C6611216C1C4E1002872B6 /* ViewerStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +275,6 @@
 				B1C6612016C1C501002872B6 /* Default.png in Resources */,
 				B1C6612116C1C501002872B6 /* Default@2x.png in Resources */,
 				B1C6612216C1C501002872B6 /* Default-568h@2x.png in Resources */,
-				B1C6612316C1C501002872B6 /* EditorStoryboard.storyboard in Resources */,
 				B1C6612416C1C501002872B6 /* ViewerStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,14 +322,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		B136073016C189E200C68D21 /* EditorStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B136073116C189E200C68D21 /* en */,
-			);
-			name = EditorStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -346,6 +336,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -357,7 +348,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -378,7 +369,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -391,6 +382,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppDataSharing/AppDataSharing-Prefix.pch";
 				INFOPLIST_FILE = "AppDataSharing/AppDataSharing-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EnharmonicHQ.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -402,6 +395,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppDataSharing/AppDataSharing-Prefix.pch";
 				INFOPLIST_FILE = "AppDataSharing/AppDataSharing-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EnharmonicHQ.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -413,6 +408,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppDataSharing/AppDataSharing-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/AppDataSharing/AppDataSharing Viewer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EnharmonicHQ.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Viewer;
 				WRAPPER_EXTENSION = app;
 			};
@@ -424,6 +421,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppDataSharing/AppDataSharing-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/AppDataSharing/AppDataSharing Viewer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EnharmonicHQ.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Viewer;
 				WRAPPER_EXTENSION = app;
 			};

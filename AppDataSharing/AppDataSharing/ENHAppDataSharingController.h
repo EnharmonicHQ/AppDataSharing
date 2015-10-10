@@ -15,12 +15,12 @@ typedef void(^ENHAppDataSharingHandler)(ENHAppDataPackage *retrievedPackage, NSE
 
 extern NSString *kReadPasteboardDataQuery;
 
-typedef enum
+typedef NS_ENUM(NSInteger, ENHAppDataSharingErrorType)
 {
     ENHAppDataSharingErrorTypeNoApplicationAvailableForScheme = 100,
     ENHAppDataSharingErrorTypeNoPasteboardForName = 200,
     ENHAppDataSharingErrorTypeNoDataFound = 300,
-} ENHAppDataSharingErrorType;
+};
 
 @interface ENHAppDataSharingController : NSObject
 

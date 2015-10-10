@@ -17,7 +17,6 @@
     {
         dateFormatter = [[NSDateFormatter alloc] init];
         [dateFormatter setDateStyle:NSDateFormatterShortStyle];
-        //[dateFormatter setTimeStyle:NSDateFormatterShortStyle];
         [dateFormatter setLocale:[NSLocale currentLocale]];
     }
     return dateFormatter;

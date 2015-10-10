@@ -56,9 +56,4 @@ static NSString *kENHPersonDateOfBirthKey = @"kENHPersonDateOfBirthKey";
     return person;
 }
 
-#pragma mark - Accessors
-@synthesize firstName = _firstName;
-@synthesize lastName = _lastName;
-@synthesize dateOfBirth = _dateOfBirth;
-
 @end

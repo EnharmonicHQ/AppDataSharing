@@ -61,7 +61,6 @@
 
 #pragma mark - Accessors
 
-@synthesize person = _person;
 -(void)setPerson:(ENHPerson *)person
 {
     if (_person != person)
