@@ -47,8 +47,8 @@
                                                completionHandler:^(ENHAppDataPackage *retrievedPackage, NSError *error) {
             if (retrievedPackage)
             {
-                NSData *packageData = [retrievedPackage payload];
-                ENHPerson *person = [ENHPerson personWithData:packageData];
+                NSData *personData = [retrievedPackage payload];
+                ENHPerson *person = [ENHPerson personWithData:personData];
                 [self setPerson:person];
             }
             else
